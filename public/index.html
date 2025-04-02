@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavad Gita Wisdom Finder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bhagavad Gita Wisdom Finder</h1>
+        </header>
+        
+        <div class="description">
+            <p>Share your life challenge or question, and receive guidance from the ancient wisdom of the Bhagavad Gita.</p>
+        </div>
+        
+        <div class="input-section">
+            <h2>What's on your mind today?</h2>
+            <textarea id="user-input" placeholder="Describe your situation, challenge, or question..."></textarea>
+            <button id="find-wisdom">Find Wisdom</button>
+            <div class="loader" id="loader"></div>
+        </div>
+        
+        <div class="result-section" id="result-section">
+            <h2>Guidance from the Bhagavad Gita</h2>
+            <div class="verse-box">
+                <h3 id="verse-reference">Chapter X, Verse Y</h3>
+                <blockquote id="verse-text">
+                    The verse text will appear here.
+                </blockquote>
+            </div>
+            
+            <div>
+                <h3>Meaning:</h3>
+                <p id="verse-meaning">The meaning of the verse will appear here.</p>
+            </div>
+            
+            <div>
+                <h3>How this relates to your situation:</h3>
+                
+                <div>
+                    <div>
+                        <h4>Themes in Your Question:</h4>
+                        <ul id="identified-themes">
+                            <!-- Themes will be populated here -->
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <p id="verse-explanation">The explanation will appear here.</p>
+                    </div>
+                    
+                    <div>
+                        <h4>Practical Application:</h4>
+                        <p id="practical-application">Practical steps will appear here.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="model-info">
+                <h3>How was this recommendation made?</h3>
+                <p id="model-explanation">The recommendation process will be explained here.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>This application uses natural language processing to find relevant wisdom from the Bhagavad Gita.</p>
+            <p>Data provided by the <a href="https://bhagavadgita.io/api" target="_blank">Bhagavad Gita API</a></p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
